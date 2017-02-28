@@ -1,0 +1,5 @@
+.stack-work/
+vender/sample-lib/libsample.so
+vender/sample-lib/sample.o
+vender/sample-lib/test
+
