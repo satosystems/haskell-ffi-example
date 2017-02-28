@@ -41,7 +41,7 @@ asyncAdd x y callback = do
 -- void asyncTask(void (*callback)(void));
 
 foreign import ccall "wrapper"
-  mkAsyncTaskCallback :: (IO ()) -> IO (FunPtr (IO ()))
+  mkAsyncTaskCallback :: IO () -> IO (FunPtr (IO ()))
 
 foreign import ccall "sample.h asyncTask"
   c_asyncTask :: FunPtr (IO ()) -> IO ()
